@@ -3,7 +3,7 @@
 	padding: 0;
 }
 
-body {
+.main-container {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -291,7 +291,7 @@ body {
 
 /* Nombres de lineas */
 .container9 {
-	width: 100%;
+	width: 90%;
 	margin-top: 5em;
 	display: grid;
 	grid-template-columns: [inicio] 1fr [linea2] 1fr [linea3] 1fr [destacado-end] 1fr [linea5] 1fr [destacado2-end] 1fr [linea7] 1fr [final];
@@ -314,4 +314,48 @@ body {
 }
 .item9:nth-of-type(3) {
 	grid-column: destacado2-end / final;
+}
+
+.item10 {
+	background: rgb(146, 255, 74);
+	border: 1px solid blueviolet;
+}
+
+.container10 {
+	width: 90%;
+	margin: 5em 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	height: 10em;
+	grid-gap: 10px;
+	/* Aliniaminetos dentro */
+	/* start end center stretch */
+	justify-items: center;
+	align-items: center;
+}
+
+/* Aliniamiento unitario de item */
+
+.item10:nth-child(5) {
+	align-self: start;
+	/* Aliniamiento unitario de item */
+	justify-self: start;
+}
+
+.item11 {
+	background: rgb(146, 255, 74);
+	border: 1px solid blueviolet;
+}
+
+.container11 {
+	margin: 5em 0;
+	display: grid;
+	grid-template-columns: repeat(3, 200px);
+	grid-template-rows: repeat(4, 200px);
+	height: 10em;
+	grid-gap: 10px;
+	/* Aliniamiento de todo el container */
+	justify-content: space-between;
+	/* align-content: center; */
 }

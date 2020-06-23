@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1em;
+	justify-content: center;
+	padding: 4em 15%;
+}
+
+.container div {
+	display: grid;
+	grid-template-columns: auto;
+	grid-gap: 1em;
+}
+
+.item {
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.item img {
+	max-width: 100%;
+	vertical-align: top;
+}
